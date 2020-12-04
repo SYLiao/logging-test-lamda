@@ -39,7 +39,7 @@ public class Handler implements RequestHandler<Object, String>{
     logger.log(body);
     body = body.replace("\\n", "").replace("\\", "");
     body = body.substring(1, body.length() - 1);
-    String str = "{\n  \"StatusCode\": 200,\n  \"ExecutedVersion\": \"$LATEST\",\n  \"topicArn\": \"arn:aws:sns:us-east-2:055832605647:Email_reminder\"\n}";
+    String str = "test Jenkins";
     logger.log(body);
     logger.log(str);
     ApiObject bodyMap = gson.fromJson(body, ApiObject.class);
